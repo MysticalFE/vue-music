@@ -1,0 +1,17 @@
+//flex 水平垂直布局
+.changeFlex (@atype:center, @jtype: center) {
+	display: flex;
+	align-items: @atype;
+	justify-content: @jtype;
+}
+//背景图
+.bg (@url) {
+	background: url(@url) no-repeat;
+	background-size: cover;
+}
+//单行不换行
+.noWrap {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
